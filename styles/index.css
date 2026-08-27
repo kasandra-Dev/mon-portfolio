@@ -49,8 +49,9 @@ li a::before{
     content: '';
     width: 0;
     left: 0;
-    height: 5px;
-    top: 25px;
+    height: 3px;
+    bottom: -5px;
+    top: auto;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
     background: linear-gradient(to right,rgb(0,157,255),rgb(255,0,255));
@@ -91,18 +92,23 @@ li a:hover::before{
    align-items: center;
    justify-content: center;
  }
- .about .about-container{
+ /* .about .about-container{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8rem;
- }
+ } */
  .about img{
     border-radius: 50%;
-    height: 400px;
-    width: 400px;
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    object-position: top;
+    display: block;
+    margin:0 auto;
+
  }
- .info-box{
+ /* .info-box{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -110,17 +116,17 @@ li a:hover::before{
     justify-content: center;
     gap: 1.5rem;
 
- }
+ } */
  .info-box h3{
      font-size: 1.8rem;
     font-weight: 500;
     opacity: 0.8;
 
  }
- .info-box h1{
+ /* .info-box h1{
     font-size: 4rem;
     font-weight: 600;
- }
+ } */
  .info-box span{
         background: linear-gradient(to right,rgb(255,0,255),rgb(0,157,255));
         background-clip:text;
@@ -139,14 +145,35 @@ li a:hover::before{
     font-weight: 500;
     text-wrap: nowrap;
     transition: 0.2s ease-in-out;
+    background-color: white;
  }
- .btn:hover{
+  /* .btn{
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border:2px solid black;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+ } */
+ button:hover{
     background-color: black;
     color: white;
+ }
+ button a{
+   text-decoration: none;
+   color: black;
+ }
+ button a:hover{
+   color: white;
  }
  .socials{
     display: flex;
     gap: 2rem;
+ }
+ .socials a{
+   text-decoration: none;
+   color: black;
  }
  .socials i{
     font-size: 2.5rem;
@@ -319,4 +346,57 @@ footer ul li a{
 .copyright{
    font-size: 300;
    margin-top:2rem ;
+}
+
+/* ===== MENU RESPONSIVE ===== */
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 15px 5%; */
+}
+
+#menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  #menu-icon {
+    display: block !important;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #111 !important;
+    flex-direction: column;
+    padding: 20px;
+    display: none !important;
+    z-index: 9999;
+  }
+
+  .nav-links.active {
+    display: flex !important;
+  }
+
+  .nav-links li a {
+    color: white !important;
+    font-size: 18px;
+    padding: 10px 0;
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  .nav-links {
+    gap: 1.5rem !important; /* un peu moins d'espace sur mobile */
+  }
+  li a::before {
+    height: 2px;
+    bottom: -3px;
+  }
 }
