@@ -1,118 +1,195 @@
 <!DOCTYPE html>
- <html>
- <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
+    <title>CV - Ngassam Kasandra</title>
     <link rel="stylesheet" href="cv.css">
 </head>
+
 <body>
-    <body>
-  <button onclick="window.print()" class="download-btn">📥 Télécharger en PDF</button>
-    <div class="cv-container"> 
-    <aside class="sidebar">
-    <img src="kach.jpeg" alt="" class="profile_pic">
 
- <div class="contact-info"> 
-    <h2> CONTACT </h2> 
-    <p> Douala, Cameroun</p>
-    <p>kasandrapimbom@gmail.com</p>
-    <p>+237 693 555 618</p>
-    <p></p>
-    </div>
+    <button type="button" onclick="window.print()" class="download-btn">
+        📥 Télécharger en PDF
+    </button>
 
-    <br>
+    <main class="cv-container">
 
-    <div class="notion">
-     <h2>Compétences</h2>
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="sidebar">
 
-     <div class="skill-box"> 
-           <p class="skil"> HTML/CSS3</p>
-           <div class="progress-bar" > 
-           <div class="progress" style= " width: 95%;"></div>
-       </div>
-       </div>
-        <div class="skill-box"> 
-           <p class="skil"> Java/JEE</p>
-           <div class="progress-bar" > 
-           <div class="progress" style= " width: 85%;"></div>
-       </div>
-       </div>
-        <div class="skill-box"> 
-           <p class="skil"> JavaScript(React)</p>
-           <div class="progress-bar" > 
-           <div class="progress" style= " width: 75%;"></div>
-       </div>
-       </div>
-        <div class="skill-box"> 
-           <p class="skil"> SQL/Bases de données</p>
-           <div class="progress-bar" > 
-           <div class="progress" style= " width: 80%;"></div>
-       </div>
-       </div>
-    </div>
+            <img src="kach.jpeg"
+                 alt="Photo de Kasandra Pimbom"
+                 class="profile-pic">
 
-    <div class="a">
-     <h2> Langues</h2>
-      <P class="skill">Français (Natif) </P>
-      <p class="skill">Anglais (technique B2) </p>
-    </div>
-</aside>
-      <main class="main_content">
-    <h1> NGASSAM KASANDRA</h1>
-    <h2 class=" np"> Futur ingénieur Logiciel | Développeur Fullstack</h2>
-        <p class="texte">
-            Étudiante passionnée en Licence 3 Génie Logiciel <br>
-            Je cherche à concevoir des applications robustes et scalables. Actuellement à la recherche d'un <br>
-            stage de 3 mois pour mettre en pratique mes compétences en Java et Web.
-        </p>
-    
-   <div class="b"> <h2> Formation Académique</h2> </div>
-    <h4> 2023-Présent </h4>
-    <h3>Licence 3- Génie Logiciel</h3>
-    <p class="texte">
-        Université de Douala Mention: Très Bien (En cours)
-    </p>
-    <h4>2021-2023</h4>
-    <h3> DUT Informatique</h3>
-    <p class="texte">
-         IUT de Douala <br>
-         Spécialité Analyse et Programmation.
-    </p> 
-     <div class="b"><h2> Projets Réalisés</h2> </div>
-    <h4> Oct 2023</h4>
-    <h3> Applications de E-Commerce (Projet Académique)</h3>
-    <p class="texte"> Développement d'une plateforme de vente en ligne avec un panier et paiement</p>
-    <table class="off">
-        <tr> 
-        <th>PHP</th>
-        <th>My SQL</th>
-        <th>Bootstrap</th>
-        </tr>
-    </table>
-    <h4> Juin 2023</h4>
-    <h3> Gestionnaire de Taches " To Do App" </h3>
-    <p class="texte">
-         Création d'une Single Page Application (SPA) pour gérer des taches quotidiennes <br>
-    </p>
-    <table class="off">  
-         <th> JavaScript</th>
-         <th> Localstorage</th> 
-         <th> CSS Grid</th>
-    </table>
+            <!-- Contact -->
+            <section class="sidebar-card">
+                <h2>Contact</h2>
 
-   <div class="b"> <h2> Atouts ( Soft Skills)</h2> <br> </div>
-    <div class="la"> 
-         <p>Travail d'équipe </p>
-         <p>Résolution de problèmes</p> 
-         <p>Méthode Agila/Scrum</p>
-         <p>cutiosité technique </p>
-     </div>
-     <footer>
-        <p>&copy;2024 - CV créé avec HTML5 & CSS3 pur </p>
-     </footer>
-    
-     </main>
-   </div>
-  </body>
-   
+                <div class="contact-info">
+                    <p>Douala, Cameroun</p>
+                    <p>
+                        <a href="mailto:kasandrapimbom@gmail.com">
+                            kasandrapimbom@gmail.com
+                        </a>
+                    </p>
+                    <p>
+                        <a href="tel:+237693555618">
+                            +237 693 555 618
+                        </a>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Compétences -->
+            <section class="sidebar-card">
+                <h2>Compétences</h2>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>HTML/CSS3</span>
+                        <span>95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>Java/JEE</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>JavaScript (React)</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-header">
+                        <span>SQL / Bases de données</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Langues -->
+            <section class="sidebar-card">
+                <h2>Langues</h2>
+
+                <p class="language">Français <span>(Natif)</span></p>
+                <p class="language">Anglais <span>(technique B2)</span></p>
+            </section>
+
+        </aside>
+
+
+        <!-- ================= CONTENU PRINCIPAL ================= -->
+        <section class="main-content">
+
+            <header class="profile-header">
+                <h1>NGASSAM KASANDRA</h1>
+                <h2>Futur ingénieur logiciel | Développeur Fullstack</h2>
+
+                <p>
+                    Étudiante passionnée en Licence 3 Génie Logiciel.
+                    Je cherche à concevoir des applications robustes et scalables.
+                    Actuellement à la recherche d'un stage de 3 mois pour mettre
+                    en pratique mes compétences en Java et Web.
+                </p>
+            </header>
+
+
+            <!-- Formation -->
+            <section class="cv-section">
+                <h2 class="section-heading">Formation Académique</h2>
+
+                <article class="timeline-item">
+                    <span class="date">2023 - Présent</span>
+                    <h3>Licence 3 - Génie Logiciel</h3>
+                    <p>Université de Douala — Mention : Très Bien (En cours)</p>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="date">2021 - 2023</span>
+                    <h3>DUT Informatique</h3>
+                    <p>
+                        IUT de Douala<br>
+                        Spécialité Analyse et Programmation.
+                    </p>
+                </article>
+            </section>
+
+
+            <!-- Projets -->
+            <section class="cv-section">
+                <h2 class="section-heading">Projets Réalisés</h2>
+
+                <article class="timeline-item">
+                    <span class="date">Oct 2023</span>
+                    <h3>Application de E-Commerce (Projet Académique)</h3>
+                    <p>
+                        Développement d'une plateforme de vente en ligne
+                        avec un panier et paiement.
+                    </p>
+
+                    <div class="technologies" aria-label="Technologies utilisées">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </article>
+
+                <article class="timeline-item">
+                    <span class="date">Juin 2023</span>
+                    <h3>Gestionnaire de Tâches « To Do App »</h3>
+                    <p>
+                        Création d'une Single Page Application (SPA)
+                        pour gérer des tâches quotidiennes.
+                    </p>
+
+                    <div class="technologies" aria-label="Technologies utilisées">
+                        <span>JavaScript</span>
+                        <span>LocalStorage</span>
+                        <span>CSS Grid</span>
+                    </div>
+                </article>
+            </section>
+
+
+            <!-- Soft skills -->
+            <section class="cv-section">
+                <h2 class="section-heading">Atouts (Soft Skills)</h2>
+
+                <div class="soft-skills">
+                    <span>Travail d'équipe</span>
+                    <span>Résolution de problèmes</span>
+                    <span>Méthode Agile / Scrum</span>
+                    <span>Curiosité technique</span>
+                </div>
+            </section>
+
+
+            <footer class="cv-footer">
+                <p>&copy; 2024 - CV créé avec HTML5 &amp; CSS3</p>
+            </footer>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
