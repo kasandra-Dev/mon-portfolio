@@ -83,8 +83,8 @@ img {
     gap: 1.5rem;
 
     background: rgba(0, 0, 0, 0.88);
-    backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
 
     border-radius: 3rem;
     z-index: 1000;
