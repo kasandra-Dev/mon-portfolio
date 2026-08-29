@@ -162,6 +162,7 @@ img {
     line-height: 1;
     cursor: pointer;
     padding: 0.25rem;
+  
 }
 
 /* ================= SECTIONS ================= */
@@ -262,7 +263,12 @@ section {
     background: var(--black);
     color: var(--white);
 }
-
+.btn-custom a{
+    color: var(--black);
+}
+.btn-custom a:hover{
+    color: var(--white);
+}
 .socials {
     display: flex;
     align-items: center;
